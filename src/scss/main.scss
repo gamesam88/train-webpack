@@ -18,13 +18,35 @@
 
 .slider {
     height: 500px;
-    background-image: url('../assets/bl4.jpg');
+    background: linear-gradient(#9198e5, #e66465);
     background-size: cover;
     width: 900px;
+    position: relative;
+
+    .arrow {
+        position: absolute;
+        color: aqua;
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
+    .arrow:hover {
+        opacity: 1;
+    }
+
+    .arrow-left {
+        top: 50%;
+        left: 0;
+    }
+
+    .arrow-rigth {
+        top: 50%;
+        right: 0;
+    }
 }
 
 .player {
     height: 200px;
-    background: linear-gradient(#e66465, #9198e5);
+    background: linear-gradient(#9198e5, #e66465);
     width: 500px;
 }
