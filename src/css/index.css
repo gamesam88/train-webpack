@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 20vh;
+  width: 100%;
+  background-color: blue;
+}
+
+body {
+  height: 100vh;
+}
