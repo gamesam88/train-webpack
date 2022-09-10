@@ -1,11 +1,13 @@
 {
   "name": "train",
   "version": "1.0.0",
+  "homepage": "https://gamesam88.github.io/train-webpack",
   "description": "",
   "main": "webpack.config.js",
   "dependencies": {},
   "devDependencies": {
     "babel-loader": "^8.2.5",
+    "gh-pages": "^4.0.0",
     "image-webpack-loader": "^8.1.0",
     "svg-inline-loader": "^0.8.2",
     "webpack": "^5.74.0",
@@ -13,7 +15,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC"
