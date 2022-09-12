@@ -1,10 +1,10 @@
 import { state } from "./state.js"
 
 const imagesList = [
-    { path: "/src/assets/bl1.jpg" },
-    { path: "/src/assets/bl2.jpg" },
-    { path: "/src/assets/bl3.jpg" },
-    { path: "/src/assets/bl4.jpg" },
+    { path: "./assets/bl1.jpg" },
+    { path: "./assets/bl2.jpg" },
+    { path: "./assets/bl3.jpg" },
+    { path: "./assets/bl4.jpg" },
 ]
 
 
