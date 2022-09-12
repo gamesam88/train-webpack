@@ -6,13 +6,16 @@ const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
 
     entry: {
-        app: '/src/index.js'
+        app: '/src/index.js',
     },
-
+    performance: {
+        hints: false
+    },
     output: {
         filename: 'main.js',
-        path: path.resolve(__dirname, 'dist'),
-        // assetModuleFilename: 'assets/[hash].[ext]',
+        path: path.resolve(__dirname, 'build'),
+        clean: true,
+        // assetModuleFilename: 'assets/[hash][ext]',
     },
     plugins: [
         new HtmlWebpackPlugin({ template: './src/index.html' }),

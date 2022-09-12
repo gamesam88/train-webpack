@@ -41,7 +41,7 @@ header {
   justify-content: center;
 }
 .main-wrapper .main-container h2 {
-  color: green;
+  color: black;
 }
 
 .slider {
@@ -71,8 +71,19 @@ header {
 
 .player {
   height: 200px;
-  background: linear-gradient(#9198e5, #e66465);
+  background: #e66465;
   width: 500px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50%;
+  cursor: pointer;
+}
+.controls div:hover {
+  opacity: 0.5;
 }
 
 body {
