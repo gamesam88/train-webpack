@@ -35,4 +35,10 @@ export const rigthtImg = () => {
         state.current_image = 0
         showImage(state.current_image)
     }
-} 
+}
+
+export function changeImgTimeout() {
+    setInterval(() => {
+        rigthtImg()
+    }, 10000);
+}
